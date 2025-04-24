@@ -6,7 +6,7 @@ import re
 name = r"^[A-Za-z]+([\-']?[A-Za-z]+)?( [A-Za-z]+([\-']?[A-Za-z]+)?)*$"
 name_regex = re.compile(name)
 
-phone_number = r""
+phone_number = r"^(\+1\s?)?(\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}$"
 phone_regex = re.compile(phone_number)
 
 email_address = r""
